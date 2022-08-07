@@ -2,7 +2,6 @@
 
 int main(void) {
 	char* str = "hello world\n";
-	
 	puts("Hello world");
 	fputs(str, stdout);
 	printf("Hello world\n");
