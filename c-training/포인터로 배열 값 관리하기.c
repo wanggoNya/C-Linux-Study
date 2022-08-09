@@ -31,11 +31,11 @@ int main(void) {
 	}
 	
 	// 첫 번째 배열요소의 포인터를 포인터 변수에 저장한다.
-	arrP = &arr[0][0]; //
+//	arrP = &arr[0][0];
 	
 	 
 	printf("몇 번째 값을 알려드릴까요? : ");
 	int num;
 	scanf("%d", num);
-//	printf("%d 번째 값은 [%c] 입니다.\n", num, 96 + num);
+	printf("%d 번째 값은 [%c] 입니다.\n", num, 96 + num);
 }
