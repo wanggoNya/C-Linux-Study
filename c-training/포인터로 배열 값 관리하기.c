@@ -1,41 +1,58 @@
 #include <stdio.h>
-#include <string.h>
+#include <stdlib.h>
 
 int main(void) {
-	int x, y;
+	int x, y, i, j, count, num;
 
 	printf("출력할 행렬의 크기를 입력 하세요: ");
-	scanf("%d %d", &x, &y);
+	scanf("%d %d", &y, &x);
 
-	char arr[x][y];
-	memset(arr, 0, x*y*sizeof(char)); // 0 으로 초기화 ;
+	// 메모리 할당, 배열과 거의 동일
+	// 동적 메모리 할당 2차원 배열 들어갈 공간을 만드는 것
+	char ** pptr = (char**)malloc(sizeof(char*) * y);
 
-	char alp = 97;
+	// 2차원 배열 생성
+	for(i = 0 ; i < y ; i++ ) {
+		*(pptr + i) = (char *)malloc(sizeof(char) * x);
+	}
 
-	int i, j;
-	
-	
+	count = 0 ;
 	for(i = 0 ; i < x ; i++ ) {
 		for(j = 0 ; j < y ; j++ ) {
-			arr[i][j] = alp;
-			alp++;
+			*(*(pptr + i) + j) = 97 + count;
+			count++;
+			if(count == 27) {
+				break;
+			}
+			printf("%3c", *(*(pptr + i) + j));
+		}
+		printf("\n");
+		if(count == 27) {
+			break;
 		}
 	}
 
-	// 행렬 출력
-	for(i = 0; i < x; i++) {
-		for(j = 0; j < y; j++) {
-			printf("%c	", arr[i][j]);
-		}
-		printf("\n");
-	}
-	
-	// 첫 번째 배열요소의 포인터를 포인터 변수에 저장한다.
-//	arrP = &arr[0][0];
-	
-	 
 	printf("몇 번째 값을 알려드릴까요? : ");
-	int num;
-	scanf("%d", num);
-	printf("%d 번째 값은 [%c] 입니다.\n", num, 96 + num);
+	scanf("%d", &num);
+
+	count = 1;
+	for(i = 0 ; i < x ; i++ ) {
+		for(j = 0 ; j < y ; j++ ) {
+			if(count == num) {
+				printf("%3c", *(*(pptr + i) + j) - 32);
+				for(i = 0 ; i < x ; i++) {
+					free(*(pptr + y));
+					return 0;
+				}
+			}
+			count++;
+		}
+	}
+
+	// 메모리 해제
+	for(i = 0 ; i < x ; i++) {
+		free(*(pptr + y));
+	}
+
+	return 0;
 }
