@@ -2,7 +2,7 @@
 
 int main(void) {
 	FILE *fp = NULL;
-	fp = fopen("output.txt", "w");
+	fp = fopen("test0811.txt", "w");
 	// w -> 쓰기 모드(Write), r -> 읽기 모드(Read)
 	
 	if(fp == NULL) {
