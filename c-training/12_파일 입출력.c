@@ -44,6 +44,7 @@ int main() {
 	while(fgets(buffer, 256, fp)) { // 문자 가져오기
 		corr = strcasestr(buffer, word);
 
+// buffer = 20byte corr 12byte 주소값 
 		while(corr != NULL) {
 			corrTemp = (char *)malloc(sizeof(char) * 1024); // corrTemp 메모리 할당
 			strcpy(corrTemp, corr); // corrTemp에 내용 복사  

@@ -16,8 +16,8 @@ int main(void) {
 	scanf("%s", word);
 	
 	// 만약 파일을 여는 데 에러가 있다면  
-	if((fp = fopen(fname, "r")) =NULL) {
-		fprintf(stderr. "파일 %s를 열 수 없습니다.", fname);
+	if((fp = fopen(fname, "r")) ==NULL) {
+		fprintf(stderr, "파일 %s를 열 수 없습니다.", fname);
 		return 0;
 	} 
 	
