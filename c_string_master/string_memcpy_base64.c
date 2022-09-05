@@ -1,11 +1,7 @@
 #include <stdio.h>
 #include <string.h>
-//#include "stdlib.h"
-//#include "unistd.h"
-//#include "fcntl.h"
-
 #include <unistd.h>
-#include <stdint.h>
+#include <stdint.h>3
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <ctype.h>
@@ -36,7 +32,7 @@ int html_pointer(char * base64) {
 	char buffer[256];
 	
 	html = fopen("body.html", "r");
-	html_encoding = fopen("base64.html", "w");
+	html_encoding = fopen("base64_memcpy.html", "w");
 	
 	if(html == NULL) {
 		printf("파일 열기에 실패했습니다. \n");
@@ -46,10 +42,15 @@ int html_pointer(char * base64) {
 		printf("파일 열기에 성공했습니다. \n");
 	}
 	
-	char front[100000] = "data:image/png;base64,";
+	char *front= "data:image/png;base64,";
 	char *back = "\"";
-	strcat(front, base64);
-	char *buffer64 = (char *)malloc(strlen(front)+1024);
+	
+	char *new_base64 = malloc(strlen(front) + strlen(base64) + 3);
+	memcpy(new_base64, front, strlen(front));
+	memcpy(new_base64 + strlen(front), base64, strlen(base64));
+	memcpy(new_base64 + strlen(base64), back, strlen(back) + 3);
+	
+	char *buffer64 = (char *)malloc(strlen(new_base64) + 1024);
 	
 	while(fgets(buffer, 256, html)) { // 읽으면서 buffer에 저장시켜놓기 
 		
@@ -57,8 +58,7 @@ int html_pointer(char * base64) {
 			
 		if(ptr) { // buffer에 포함되어 있다면
             strcpy(buffer64, buffer);
-            strcpy(strstr(buffer64, "src=")+5, front);
-            strcat(buffer64, back);
+            strcpy(strstr(buffer64, "src=")+5, new_base64);
 			fputs(buffer64, html_encoding);
 		}
 		else {
@@ -66,6 +66,7 @@ int html_pointer(char * base64) {
 		}
 	}
 	
+	free(new_base64);
 	free(buffer64);
 	fclose(html_encoding);
 	fclose(html);
@@ -166,6 +167,8 @@ char * sd_string_alloc_base64_encode(const unsigned char *src, size_t len, size_
 
     *pos = '\0';
     if (out_len) *out_len = pos - out;
+    printf("outlen : %u\n", out_len);
     
+    printf("out : %u", strlen(out));
     return (char *)out;
 }

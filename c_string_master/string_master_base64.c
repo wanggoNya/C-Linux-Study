@@ -41,8 +41,8 @@ int html_pointer(char * base64) {
 	else {
 		printf("파일 열기에 성공했습니다. \n");
 	}
-	
-	char front[100000] = "data:image/png;base64,";
+
+	char front[50000] = "data:image/png;base64,";
 	char *back = "\"";
 	strcat(front, base64);
 	char *buffer64 = (char *)malloc(strlen(front)+1024);
@@ -162,6 +162,8 @@ char * sd_string_alloc_base64_encode(const unsigned char *src, size_t len, size_
 
     *pos = '\0';
     if (out_len) *out_len = pos - out;
+    printf("outlen : %u\n", out_len);
     
+    printf("out : %u\n", strlen(out));
     return (char *)out;
 }
