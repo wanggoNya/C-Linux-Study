@@ -1,0 +1,15 @@
+==14619== Memcheck, a memory error detector
+==14619== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==14619== Using Valgrind-3.19.0 and LibVEX; rerun with -h for copyright info
+==14619== Command: /home/sykim/github/c-study/c-json-parse/json-c-build/tests/test1Formatted spaced pretty
+==14619== Parent PID: 14571
+==14619== 
+==14619== 
+==14619== HEAP SUMMARY:
+==14619==     in use at exit: 0 bytes in 0 blocks
+==14619==   total heap usage: 240 allocs, 240 frees, 15,599 bytes allocated
+==14619== 
+==14619== All heap blocks were freed -- no leaks are possible
+==14619== 
+==14619== For lists of detected and suppressed errors, rerun with: -s
+==14619== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

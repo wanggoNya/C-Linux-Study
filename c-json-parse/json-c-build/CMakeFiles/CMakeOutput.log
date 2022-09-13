@@ -1,0 +1,1252 @@
+The system is: Linux - 4.18.0-408.el8.x86_64 - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/3.20.2/CompilerIdC/a.out"
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ed207/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ed207.dir/build.make CMakeFiles/cmTC_ed207.dir/build
+gmake[1]: Entering directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ed207.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc   -v -o CMakeFiles/cmTC_ed207.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+OFFLOAD_TARGET_NAMES=nvptx-none
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-redhat-linux
+Configured with: ../configure --enable-bootstrap --enable-languages=c,c++,fortran,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl --disable-libmpx --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_32=x86-64 --build=x86_64-redhat-linux
+Thread model: posix
+gcc version 8.5.0 20210514 (Red Hat 8.5.0-15) (GCC) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ed207.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+ /usr/libexec/gcc/x86_64-redhat-linux/8/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_ed207.dir/CMakeCCompilerABI.c.o -version -o /tmp/cc2Ggw4S.s
+GNU C17 (GCC) version 8.5.0 20210514 (Red Hat 8.5.0-15) (x86_64-redhat-linux)
+	compiled by GNU C version 8.5.0 20210514 (Red Hat 8.5.0-15), GMP version 6.1.2, MPFR version 3.1.6-p2, MPC version 1.1.0, isl version isl-0.16.1-GMP
+
+GGC heuristics: --param ggc-min-expand=85 --param ggc-min-heapsize=103006
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/8/include-fixed"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/8/../../../../x86_64-redhat-linux/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/lib/gcc/x86_64-redhat-linux/8/include
+ /usr/local/include
+ /usr/include
+End of search list.
+GNU C17 (GCC) version 8.5.0 20210514 (Red Hat 8.5.0-15) (x86_64-redhat-linux)
+	compiled by GNU C version 8.5.0 20210514 (Red Hat 8.5.0-15), GMP version 6.1.2, MPFR version 3.1.6-p2, MPC version 1.1.0, isl version isl-0.16.1-GMP
+
+GGC heuristics: --param ggc-min-expand=85 --param ggc-min-heapsize=103006
+Compiler executable checksum: 546828b79bce5595f67138c9f33121d6
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ed207.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+ as -v --64 -o CMakeFiles/cmTC_ed207.dir/CMakeCCompilerABI.c.o /tmp/cc2Ggw4S.s
+GNU assembler version 2.30 (x86_64-redhat-linux) using BFD version version 2.30-117.el8
+COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/8/:/usr/libexec/gcc/x86_64-redhat-linux/8/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/8/:/usr/lib/gcc/x86_64-redhat-linux/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/8/:/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/8/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ed207.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+Linking C executable cmTC_ed207
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ed207.dir/link.txt --verbose=1
+/usr/bin/cc  -v -rdynamic CMakeFiles/cmTC_ed207.dir/CMakeCCompilerABI.c.o -o cmTC_ed207 
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/8/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-redhat-linux
+Configured with: ../configure --enable-bootstrap --enable-languages=c,c++,fortran,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl --disable-libmpx --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_32=x86-64 --build=x86_64-redhat-linux
+Thread model: posix
+gcc version 8.5.0 20210514 (Red Hat 8.5.0-15) (GCC) 
+COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/8/:/usr/libexec/gcc/x86_64-redhat-linux/8/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/8/:/usr/lib/gcc/x86_64-redhat-linux/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/8/:/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/8/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_ed207' '-mtune=generic' '-march=x86-64'
+ /usr/libexec/gcc/x86_64-redhat-linux/8/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/8/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/8/lto-wrapper -plugin-opt=-fresolution=/tmp/cctvdTBX.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_ed207 /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/8/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/8 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../.. CMakeFiles/cmTC_ed207.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-redhat-linux/8/crtend.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_ed207' '-mtune=generic' '-march=x86-64'
+gmake[1]: Leaving directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/lib/gcc/x86_64-redhat-linux/8/include]
+    add: [/usr/local/include]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/usr/lib/gcc/x86_64-redhat-linux/8/include] ==> [/usr/lib/gcc/x86_64-redhat-linux/8/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/usr/lib/gcc/x86_64-redhat-linux/8/include;/usr/local/include;/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ed207/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ed207.dir/build.make CMakeFiles/cmTC_ed207.dir/build]
+  ignore line: [gmake[1]: Entering directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_ed207.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_ed207.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-redhat-linux]
+  ignore line: [Configured with: ../configure --enable-bootstrap --enable-languages=c c++ fortran lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl --disable-libmpx --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_32=x86-64 --build=x86_64-redhat-linux]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 8.5.0 20210514 (Red Hat 8.5.0-15) (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ed207.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [ /usr/libexec/gcc/x86_64-redhat-linux/8/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_ed207.dir/CMakeCCompilerABI.c.o -version -o /tmp/cc2Ggw4S.s]
+  ignore line: [GNU C17 (GCC) version 8.5.0 20210514 (Red Hat 8.5.0-15) (x86_64-redhat-linux)]
+  ignore line: [	compiled by GNU C version 8.5.0 20210514 (Red Hat 8.5.0-15)  GMP version 6.1.2  MPFR version 3.1.6-p2  MPC version 1.1.0  isl version isl-0.16.1-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=85 --param ggc-min-heapsize=103006]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/8/include-fixed"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/8/../../../../x86_64-redhat-linux/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/8/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C17 (GCC) version 8.5.0 20210514 (Red Hat 8.5.0-15) (x86_64-redhat-linux)]
+  ignore line: [	compiled by GNU C version 8.5.0 20210514 (Red Hat 8.5.0-15)  GMP version 6.1.2  MPFR version 3.1.6-p2  MPC version 1.1.0  isl version isl-0.16.1-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=85 --param ggc-min-heapsize=103006]
+  ignore line: [Compiler executable checksum: 546828b79bce5595f67138c9f33121d6]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ed207.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_ed207.dir/CMakeCCompilerABI.c.o /tmp/cc2Ggw4S.s]
+  ignore line: [GNU assembler version 2.30 (x86_64-redhat-linux) using BFD version version 2.30-117.el8]
+  ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/8/:/usr/libexec/gcc/x86_64-redhat-linux/8/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/8/:/usr/lib/gcc/x86_64-redhat-linux/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/8/:/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/8/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ed207.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+  ignore line: [Linking C executable cmTC_ed207]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ed207.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc  -v -rdynamic CMakeFiles/cmTC_ed207.dir/CMakeCCompilerABI.c.o -o cmTC_ed207 ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/8/lto-wrapper]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-redhat-linux]
+  ignore line: [Configured with: ../configure --enable-bootstrap --enable-languages=c c++ fortran lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl --disable-libmpx --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_32=x86-64 --build=x86_64-redhat-linux]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 8.5.0 20210514 (Red Hat 8.5.0-15) (GCC) ]
+  ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/8/:/usr/libexec/gcc/x86_64-redhat-linux/8/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/8/:/usr/lib/gcc/x86_64-redhat-linux/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/8/:/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/8/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_ed207' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/libexec/gcc/x86_64-redhat-linux/8/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/8/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/8/lto-wrapper -plugin-opt=-fresolution=/tmp/cctvdTBX.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_ed207 /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/8/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/8 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../.. CMakeFiles/cmTC_ed207.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-redhat-linux/8/crtend.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crtn.o]
+    arg [/usr/libexec/gcc/x86_64-redhat-linux/8/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/libexec/gcc/x86_64-redhat-linux/8/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/8/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cctvdTBX.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--no-add-needed] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_ed207] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crt1.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crt1.o]
+    arg [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crti.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crti.o]
+    arg [/usr/lib/gcc/x86_64-redhat-linux/8/crtbegin.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/8/crtbegin.o]
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/8] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/8]
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/8/../../..] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/8/../../..]
+    arg [CMakeFiles/cmTC_ed207.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/8/crtend.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/8/crtend.o]
+    arg [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crtn.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crtn.o]
+  collapse obj [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crt1.o] ==> [/usr/lib64/crt1.o]
+  collapse obj [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crti.o] ==> [/usr/lib64/crti.o]
+  collapse obj [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crtn.o] ==> [/usr/lib64/crtn.o]
+  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/8] ==> [/usr/lib/gcc/x86_64-redhat-linux/8]
+  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64] ==> [/usr/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/8/../../..] ==> [/usr/lib]
+  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+  implicit objs: [/usr/lib64/crt1.o;/usr/lib64/crti.o;/usr/lib/gcc/x86_64-redhat-linux/8/crtbegin.o;/usr/lib/gcc/x86_64-redhat-linux/8/crtend.o;/usr/lib64/crtn.o]
+  implicit dirs: [/usr/lib/gcc/x86_64-redhat-linux/8;/usr/lib64;/lib64;/usr/lib]
+  implicit fwks: []
+
+
+Determining if the include file fcntl.h exists passed with the following output:
+Change Dir: /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_66efc/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_66efc.dir/build.make CMakeFiles/cmTC_66efc.dir/build
+gmake[1]: Entering directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_66efc.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_66efc.dir/CheckIncludeFile.c.o -c /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_66efc
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_66efc.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_66efc.dir/CheckIncludeFile.c.o -o cmTC_66efc  -lm 
+gmake[1]: Leaving directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file inttypes.h exists passed with the following output:
+Change Dir: /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c19d7/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c19d7.dir/build.make CMakeFiles/cmTC_c19d7.dir/build
+gmake[1]: Entering directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c19d7.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_c19d7.dir/CheckIncludeFile.c.o -c /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_c19d7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c19d7.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_c19d7.dir/CheckIncludeFile.c.o -o cmTC_c19d7  -lm 
+gmake[1]: Leaving directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file stdarg.h exists passed with the following output:
+Change Dir: /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_04407/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_04407.dir/build.make CMakeFiles/cmTC_04407.dir/build
+gmake[1]: Entering directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_04407.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_04407.dir/CheckIncludeFile.c.o -c /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_04407
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_04407.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_04407.dir/CheckIncludeFile.c.o -o cmTC_04407  -lm 
+gmake[1]: Leaving directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file strings.h exists passed with the following output:
+Change Dir: /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_24525/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_24525.dir/build.make CMakeFiles/cmTC_24525.dir/build
+gmake[1]: Entering directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_24525.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_24525.dir/CheckIncludeFile.c.o -c /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_24525
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_24525.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_24525.dir/CheckIncludeFile.c.o -o cmTC_24525  -lm 
+gmake[1]: Leaving directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file string.h exists passed with the following output:
+Change Dir: /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_a9bc0/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a9bc0.dir/build.make CMakeFiles/cmTC_a9bc0.dir/build
+gmake[1]: Entering directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a9bc0.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_a9bc0.dir/CheckIncludeFile.c.o -c /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_a9bc0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a9bc0.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_a9bc0.dir/CheckIncludeFile.c.o -o cmTC_a9bc0  -lm 
+gmake[1]: Leaving directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file syslog.h exists passed with the following output:
+Change Dir: /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_7d804/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_7d804.dir/build.make CMakeFiles/cmTC_7d804.dir/build
+gmake[1]: Entering directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7d804.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_7d804.dir/CheckIncludeFile.c.o -c /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_7d804
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7d804.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_7d804.dir/CheckIncludeFile.c.o -o cmTC_7d804  -lm 
+gmake[1]: Leaving directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if files stdlib.h;stdarg.h;string.h;float.h exist passed with the following output:
+Change Dir: /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b4243/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b4243.dir/build.make CMakeFiles/cmTC_b4243.dir/build
+gmake[1]: Entering directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b4243.dir/STDC_HEADERS.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_b4243.dir/STDC_HEADERS.c.o -c /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CheckIncludeFiles/STDC_HEADERS.c
+Linking C executable cmTC_b4243
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b4243.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_b4243.dir/STDC_HEADERS.c.o -o cmTC_b4243  -lm 
+gmake[1]: Leaving directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file unistd.h exists passed with the following output:
+Change Dir: /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_7fc20/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_7fc20.dir/build.make CMakeFiles/cmTC_7fc20.dir/build
+gmake[1]: Entering directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7fc20.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_7fc20.dir/CheckIncludeFile.c.o -c /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_7fc20
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7fc20.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_7fc20.dir/CheckIncludeFile.c.o -o cmTC_7fc20  -lm 
+gmake[1]: Leaving directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_58503/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_58503.dir/build.make CMakeFiles/cmTC_58503.dir/build
+gmake[1]: Entering directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_58503.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_58503.dir/CheckIncludeFile.c.o -c /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_58503
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_58503.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_58503.dir/CheckIncludeFile.c.o -o cmTC_58503  -lm 
+gmake[1]: Leaving directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file sys/resource.h exists passed with the following output:
+Change Dir: /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_0da59/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_0da59.dir/build.make CMakeFiles/cmTC_0da59.dir/build
+gmake[1]: Entering directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0da59.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_0da59.dir/CheckIncludeFile.c.o -c /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_0da59
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0da59.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_0da59.dir/CheckIncludeFile.c.o -o cmTC_0da59  -lm 
+gmake[1]: Leaving directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file dlfcn.h exists passed with the following output:
+Change Dir: /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b9094/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b9094.dir/build.make CMakeFiles/cmTC_b9094.dir/build
+gmake[1]: Entering directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b9094.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_b9094.dir/CheckIncludeFile.c.o -c /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_b9094
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b9094.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_b9094.dir/CheckIncludeFile.c.o -o cmTC_b9094  -lm 
+gmake[1]: Leaving directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file endian.h exists passed with the following output:
+Change Dir: /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e64b1/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e64b1.dir/build.make CMakeFiles/cmTC_e64b1.dir/build
+gmake[1]: Entering directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e64b1.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_e64b1.dir/CheckIncludeFile.c.o -c /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_e64b1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e64b1.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_e64b1.dir/CheckIncludeFile.c.o -o cmTC_e64b1  -lm 
+gmake[1]: Leaving directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file limits.h exists passed with the following output:
+Change Dir: /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_58029/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_58029.dir/build.make CMakeFiles/cmTC_58029.dir/build
+gmake[1]: Entering directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_58029.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_58029.dir/CheckIncludeFile.c.o -c /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_58029
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_58029.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_58029.dir/CheckIncludeFile.c.o -o cmTC_58029  -lm 
+gmake[1]: Leaving directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file locale.h exists passed with the following output:
+Change Dir: /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_6b407/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_6b407.dir/build.make CMakeFiles/cmTC_6b407.dir/build
+gmake[1]: Entering directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6b407.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_6b407.dir/CheckIncludeFile.c.o -c /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_6b407
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6b407.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_6b407.dir/CheckIncludeFile.c.o -o cmTC_6b407  -lm 
+gmake[1]: Leaving directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file memory.h exists passed with the following output:
+Change Dir: /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_1dd32/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_1dd32.dir/build.make CMakeFiles/cmTC_1dd32.dir/build
+gmake[1]: Entering directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1dd32.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_1dd32.dir/CheckIncludeFile.c.o -c /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_1dd32
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1dd32.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_1dd32.dir/CheckIncludeFile.c.o -o cmTC_1dd32  -lm 
+gmake[1]: Leaving directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c519b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c519b.dir/build.make CMakeFiles/cmTC_c519b.dir/build
+gmake[1]: Entering directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c519b.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_c519b.dir/CheckIncludeFile.c.o -c /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_c519b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c519b.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_c519b.dir/CheckIncludeFile.c.o -o cmTC_c519b  -lm 
+gmake[1]: Leaving directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file stdlib.h exists passed with the following output:
+Change Dir: /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_648ca/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_648ca.dir/build.make CMakeFiles/cmTC_648ca.dir/build
+gmake[1]: Entering directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_648ca.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_648ca.dir/CheckIncludeFile.c.o -c /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_648ca
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_648ca.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_648ca.dir/CheckIncludeFile.c.o -o cmTC_648ca  -lm 
+gmake[1]: Leaving directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file sys/cdefs.h exists passed with the following output:
+Change Dir: /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_97c56/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_97c56.dir/build.make CMakeFiles/cmTC_97c56.dir/build
+gmake[1]: Entering directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_97c56.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_97c56.dir/CheckIncludeFile.c.o -c /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_97c56
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_97c56.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_97c56.dir/CheckIncludeFile.c.o -o cmTC_97c56  -lm 
+gmake[1]: Leaving directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file sys/param.h exists passed with the following output:
+Change Dir: /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_f27a4/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f27a4.dir/build.make CMakeFiles/cmTC_f27a4.dir/build
+gmake[1]: Entering directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f27a4.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_f27a4.dir/CheckIncludeFile.c.o -c /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_f27a4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f27a4.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_f27a4.dir/CheckIncludeFile.c.o -o cmTC_f27a4  -lm 
+gmake[1]: Leaving directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file sys/random.h exists passed with the following output:
+Change Dir: /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_3e2a8/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_3e2a8.dir/build.make CMakeFiles/cmTC_3e2a8.dir/build
+gmake[1]: Entering directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3e2a8.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_3e2a8.dir/CheckIncludeFile.c.o -c /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_3e2a8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3e2a8.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_3e2a8.dir/CheckIncludeFile.c.o -o cmTC_3e2a8  -lm 
+gmake[1]: Leaving directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file sys/stat.h exists passed with the following output:
+Change Dir: /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_47d42/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_47d42.dir/build.make CMakeFiles/cmTC_47d42.dir/build
+gmake[1]: Entering directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_47d42.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_47d42.dir/CheckIncludeFile.c.o -c /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_47d42
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_47d42.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_47d42.dir/CheckIncludeFile.c.o -o cmTC_47d42  -lm 
+gmake[1]: Leaving directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the INFINITY exist passed with the following output:
+Change Dir: /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_084a6/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_084a6.dir/build.make CMakeFiles/cmTC_084a6.dir/build
+gmake[1]: Entering directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_084a6.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_084a6.dir/CheckSymbolExists.c.o -c /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_084a6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_084a6.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_084a6.dir/CheckSymbolExists.c.o -o cmTC_084a6  -lm 
+gmake[1]: Leaving directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef INFINITY
+  return ((int*)(&INFINITY))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the isinf exist passed with the following output:
+Change Dir: /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_f7709/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f7709.dir/build.make CMakeFiles/cmTC_f7709.dir/build
+gmake[1]: Entering directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f7709.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_f7709.dir/CheckSymbolExists.c.o -c /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_f7709
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f7709.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_f7709.dir/CheckSymbolExists.c.o -o cmTC_f7709  -lm 
+gmake[1]: Leaving directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef isinf
+  return ((int*)(&isinf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the isnan exist passed with the following output:
+Change Dir: /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e3380/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e3380.dir/build.make CMakeFiles/cmTC_e3380.dir/build
+gmake[1]: Entering directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e3380.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_e3380.dir/CheckSymbolExists.c.o -c /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_e3380
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e3380.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_e3380.dir/CheckSymbolExists.c.o -o cmTC_e3380  -lm 
+gmake[1]: Leaving directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef isnan
+  return ((int*)(&isnan))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the nan exist passed with the following output:
+Change Dir: /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_29504/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_29504.dir/build.make CMakeFiles/cmTC_29504.dir/build
+gmake[1]: Entering directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_29504.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_29504.dir/CheckSymbolExists.c.o -c /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_29504
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_29504.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_29504.dir/CheckSymbolExists.c.o -o cmTC_29504  -lm 
+gmake[1]: Leaving directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef nan
+  return ((int*)(&nan))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the snprintf exist passed with the following output:
+Change Dir: /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_84103/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_84103.dir/build.make CMakeFiles/cmTC_84103.dir/build
+gmake[1]: Entering directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_84103.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_84103.dir/CheckSymbolExists.c.o -c /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_84103
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_84103.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_84103.dir/CheckSymbolExists.c.o -o cmTC_84103  -lm 
+gmake[1]: Leaving directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef snprintf
+  return ((int*)(&snprintf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the vasprintf exist passed with the following output:
+Change Dir: /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_f307d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f307d.dir/build.make CMakeFiles/cmTC_f307d.dir/build
+gmake[1]: Entering directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f307d.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_f307d.dir/CheckSymbolExists.c.o -c /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_f307d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f307d.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_f307d.dir/CheckSymbolExists.c.o -o cmTC_f307d  -lm 
+gmake[1]: Leaving directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef vasprintf
+  return ((int*)(&vasprintf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the vsnprintf exist passed with the following output:
+Change Dir: /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_f8827/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f8827.dir/build.make CMakeFiles/cmTC_f8827.dir/build
+gmake[1]: Entering directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f8827.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_f8827.dir/CheckSymbolExists.c.o -c /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_f8827
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f8827.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_f8827.dir/CheckSymbolExists.c.o -o cmTC_f8827  -lm 
+gmake[1]: Leaving directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef vsnprintf
+  return ((int*)(&vsnprintf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the vprintf exist passed with the following output:
+Change Dir: /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_f511a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f511a.dir/build.make CMakeFiles/cmTC_f511a.dir/build
+gmake[1]: Entering directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f511a.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_f511a.dir/CheckSymbolExists.c.o -c /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_f511a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f511a.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_f511a.dir/CheckSymbolExists.c.o -o cmTC_f511a  -lm 
+gmake[1]: Leaving directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef vprintf
+  return ((int*)(&vprintf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the open exist passed with the following output:
+Change Dir: /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e8a7f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e8a7f.dir/build.make CMakeFiles/cmTC_e8a7f.dir/build
+gmake[1]: Entering directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e8a7f.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_e8a7f.dir/CheckSymbolExists.c.o -c /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_e8a7f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e8a7f.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_e8a7f.dir/CheckSymbolExists.c.o -o cmTC_e8a7f  -lm 
+gmake[1]: Leaving directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <fcntl.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef open
+  return ((int*)(&open))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the realloc exist passed with the following output:
+Change Dir: /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_9cda3/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_9cda3.dir/build.make CMakeFiles/cmTC_9cda3.dir/build
+gmake[1]: Entering directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9cda3.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_9cda3.dir/CheckSymbolExists.c.o -c /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_9cda3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9cda3.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_9cda3.dir/CheckSymbolExists.c.o -o cmTC_9cda3  -lm 
+gmake[1]: Leaving directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef realloc
+  return ((int*)(&realloc))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the setlocale exist passed with the following output:
+Change Dir: /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_9ac7c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_9ac7c.dir/build.make CMakeFiles/cmTC_9ac7c.dir/build
+gmake[1]: Entering directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9ac7c.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_9ac7c.dir/CheckSymbolExists.c.o -c /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_9ac7c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9ac7c.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_9ac7c.dir/CheckSymbolExists.c.o -o cmTC_9ac7c  -lm 
+gmake[1]: Leaving directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <locale.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef setlocale
+  return ((int*)(&setlocale))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the uselocale exist passed with the following output:
+Change Dir: /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_24511/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_24511.dir/build.make CMakeFiles/cmTC_24511.dir/build
+gmake[1]: Entering directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_24511.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_24511.dir/CheckSymbolExists.c.o -c /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_24511
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_24511.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_24511.dir/CheckSymbolExists.c.o -o cmTC_24511  -lm 
+gmake[1]: Leaving directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <locale.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef uselocale
+  return ((int*)(&uselocale))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strcasecmp exist passed with the following output:
+Change Dir: /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_8a266/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_8a266.dir/build.make CMakeFiles/cmTC_8a266.dir/build
+gmake[1]: Entering directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8a266.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_8a266.dir/CheckSymbolExists.c.o -c /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_8a266
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8a266.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_8a266.dir/CheckSymbolExists.c.o -o cmTC_8a266  -lm 
+gmake[1]: Leaving directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <strings.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strcasecmp
+  return ((int*)(&strcasecmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strncasecmp exist passed with the following output:
+Change Dir: /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e64f5/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e64f5.dir/build.make CMakeFiles/cmTC_e64f5.dir/build
+gmake[1]: Entering directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e64f5.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_e64f5.dir/CheckSymbolExists.c.o -c /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_e64f5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e64f5.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_e64f5.dir/CheckSymbolExists.c.o -o cmTC_e64f5  -lm 
+gmake[1]: Leaving directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <strings.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strncasecmp
+  return ((int*)(&strncasecmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strdup exist passed with the following output:
+Change Dir: /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d3c44/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d3c44.dir/build.make CMakeFiles/cmTC_d3c44.dir/build
+gmake[1]: Entering directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d3c44.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_d3c44.dir/CheckSymbolExists.c.o -c /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_d3c44
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d3c44.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_d3c44.dir/CheckSymbolExists.c.o -o cmTC_d3c44  -lm 
+gmake[1]: Leaving directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <string.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strdup
+  return ((int*)(&strdup))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strerror exist passed with the following output:
+Change Dir: /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_2e224/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2e224.dir/build.make CMakeFiles/cmTC_2e224.dir/build
+gmake[1]: Entering directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2e224.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_2e224.dir/CheckSymbolExists.c.o -c /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_2e224
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2e224.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_2e224.dir/CheckSymbolExists.c.o -o cmTC_2e224  -lm 
+gmake[1]: Leaving directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <string.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strerror
+  return ((int*)(&strerror))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the vsyslog exist passed with the following output:
+Change Dir: /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_fc3b1/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_fc3b1.dir/build.make CMakeFiles/cmTC_fc3b1.dir/build
+gmake[1]: Entering directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fc3b1.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_fc3b1.dir/CheckSymbolExists.c.o -c /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_fc3b1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fc3b1.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_fc3b1.dir/CheckSymbolExists.c.o -o cmTC_fc3b1  -lm 
+gmake[1]: Leaving directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <syslog.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef vsyslog
+  return ((int*)(&vsyslog))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the getrandom exist passed with the following output:
+Change Dir: /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_482f7/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_482f7.dir/build.make CMakeFiles/cmTC_482f7.dir/build
+gmake[1]: Entering directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_482f7.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_482f7.dir/CheckSymbolExists.c.o -c /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_482f7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_482f7.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_482f7.dir/CheckSymbolExists.c.o -o cmTC_482f7  -lm 
+gmake[1]: Leaving directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/random.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef getrandom
+  return ((int*)(&getrandom))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the getrusage exist passed with the following output:
+Change Dir: /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_650b0/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_650b0.dir/build.make CMakeFiles/cmTC_650b0.dir/build
+gmake[1]: Entering directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_650b0.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_650b0.dir/CheckSymbolExists.c.o -c /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_650b0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_650b0.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_650b0.dir/CheckSymbolExists.c.o -o cmTC_650b0  -lm 
+gmake[1]: Leaving directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/resource.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef getrusage
+  return ((int*)(&getrusage))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strtoll exist passed with the following output:
+Change Dir: /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_7bb3e/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_7bb3e.dir/build.make CMakeFiles/cmTC_7bb3e.dir/build
+gmake[1]: Entering directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7bb3e.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_7bb3e.dir/CheckSymbolExists.c.o -c /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_7bb3e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7bb3e.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_7bb3e.dir/CheckSymbolExists.c.o -o cmTC_7bb3e  -lm 
+gmake[1]: Leaving directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strtoll
+  return ((int*)(&strtoll))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strtoull exist passed with the following output:
+Change Dir: /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d24c2/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d24c2.dir/build.make CMakeFiles/cmTC_d24c2.dir/build
+gmake[1]: Entering directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d24c2.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_d24c2.dir/CheckSymbolExists.c.o -c /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_d24c2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d24c2.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_d24c2.dir/CheckSymbolExists.c.o -o cmTC_d24c2  -lm 
+gmake[1]: Leaving directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+
+
+File /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strtoull
+  return ((int*)(&strtoull))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b0f47/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b0f47.dir/build.make CMakeFiles/cmTC_b0f47.dir/build
+gmake[1]: Entering directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b0f47.dir/CheckIncludeFile.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_b0f47.dir/CheckIncludeFile.c.o -c /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_b0f47
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b0f47.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_b0f47.dir/CheckIncludeFile.c.o -o cmTC_b0f47  -lm 
+gmake[1]: Leaving directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of int passed with the following output:
+Change Dir: /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_5f8ed/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_5f8ed.dir/build.make CMakeFiles/cmTC_5f8ed.dir/build
+gmake[1]: Entering directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5f8ed.dir/SIZEOF_INT.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_5f8ed.dir/SIZEOF_INT.c.o -c /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CheckTypeSize/SIZEOF_INT.c
+Linking C executable cmTC_5f8ed
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5f8ed.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_5f8ed.dir/SIZEOF_INT.c.o -o cmTC_5f8ed  -lm 
+gmake[1]: Leaving directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of int64_t passed with the following output:
+Change Dir: /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_57c29/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_57c29.dir/build.make CMakeFiles/cmTC_57c29.dir/build
+gmake[1]: Entering directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_57c29.dir/SIZEOF_INT64_T.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_57c29.dir/SIZEOF_INT64_T.c.o -c /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CheckTypeSize/SIZEOF_INT64_T.c
+Linking C executable cmTC_57c29
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_57c29.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_57c29.dir/SIZEOF_INT64_T.c.o -o cmTC_57c29  -lm 
+gmake[1]: Leaving directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of long passed with the following output:
+Change Dir: /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_83bb2/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_83bb2.dir/build.make CMakeFiles/cmTC_83bb2.dir/build
+gmake[1]: Entering directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_83bb2.dir/SIZEOF_LONG.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_83bb2.dir/SIZEOF_LONG.c.o -c /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CheckTypeSize/SIZEOF_LONG.c
+Linking C executable cmTC_83bb2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_83bb2.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_83bb2.dir/SIZEOF_LONG.c.o -o cmTC_83bb2  -lm 
+gmake[1]: Leaving directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of long long passed with the following output:
+Change Dir: /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d4f0b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d4f0b.dir/build.make CMakeFiles/cmTC_d4f0b.dir/build
+gmake[1]: Entering directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d4f0b.dir/SIZEOF_LONG_LONG.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_d4f0b.dir/SIZEOF_LONG_LONG.c.o -c /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CheckTypeSize/SIZEOF_LONG_LONG.c
+Linking C executable cmTC_d4f0b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d4f0b.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_d4f0b.dir/SIZEOF_LONG_LONG.c.o -o cmTC_d4f0b  -lm 
+gmake[1]: Leaving directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of size_t passed with the following output:
+Change Dir: /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_cab8a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_cab8a.dir/build.make CMakeFiles/cmTC_cab8a.dir/build
+gmake[1]: Entering directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cab8a.dir/SIZEOF_SIZE_T.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_cab8a.dir/SIZEOF_SIZE_T.c.o -c /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CheckTypeSize/SIZEOF_SIZE_T.c
+Linking C executable cmTC_cab8a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cab8a.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_cab8a.dir/SIZEOF_SIZE_T.c.o -o cmTC_cab8a  -lm 
+gmake[1]: Leaving directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of ssize_t passed with the following output:
+Change Dir: /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_068e4/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_068e4.dir/build.make CMakeFiles/cmTC_068e4.dir/build
+gmake[1]: Entering directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_068e4.dir/SIZEOF_SSIZE_T.c.o
+/usr/bin/cc -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_068e4.dir/SIZEOF_SSIZE_T.c.o -c /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CheckTypeSize/SIZEOF_SSIZE_T.c
+Linking C executable cmTC_068e4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_068e4.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_068e4.dir/SIZEOF_SSIZE_T.c.o -o cmTC_068e4  -lm 
+gmake[1]: Leaving directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+
+
+
+Performing C SOURCE FILE Test HAVE_ATOMIC_BUILTINS succeeded with the following output:
+Change Dir: /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_92091/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_92091.dir/build.make CMakeFiles/cmTC_92091.dir/build
+gmake[1]: Entering directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_92091.dir/src.c.o
+/usr/bin/cc -DHAVE_ATOMIC_BUILTINS -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_92091.dir/src.c.o -c /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_92091
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_92091.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_92091.dir/src.c.o -o cmTC_92091  -lm 
+gmake[1]: Leaving directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { int i, x = 0; i = __sync_add_and_fetch(&x,1); return x; }
+Performing C SOURCE FILE Test HAVE___THREAD succeeded with the following output:
+Change Dir: /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_68ed9/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_68ed9.dir/build.make CMakeFiles/cmTC_68ed9.dir/build
+gmake[1]: Entering directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_68ed9.dir/src.c.o
+/usr/bin/cc -DHAVE___THREAD -D_GNU_SOURCE  -fPIE -o CMakeFiles/cmTC_68ed9.dir/src.c.o -c /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_68ed9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_68ed9.dir/link.txt --verbose=1
+/usr/bin/cc -rdynamic CMakeFiles/cmTC_68ed9.dir/src.c.o -o cmTC_68ed9  -lm 
+gmake[1]: Leaving directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+__thread int x = 0; int main() { return 0; }
+Performing C SOURCE FILE Test REENTRANT_WORKS succeeded with the following output:
+Change Dir: /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_2f40a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2f40a.dir/build.make CMakeFiles/cmTC_2f40a.dir/build
+gmake[1]: Entering directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2f40a.dir/src.c.o
+/usr/bin/cc -DREENTRANT_WORKS -D_GNU_SOURCE  -ffunction-sections -fdata-sections -Werror -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes  -fPIE -o CMakeFiles/cmTC_2f40a.dir/src.c.o -c /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_2f40a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2f40a.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -Werror -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes  -rdynamic CMakeFiles/cmTC_2f40a.dir/src.c.o -o cmTC_2f40a  -lm 
+gmake[1]: Leaving directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+	/* uClibc toolchains without threading barf when _REENTRANT is defined */
+	#define _REENTRANT 1
+	#include <sys/types.h>
+	int main (void)
+	{
+	  return 0;
+	}
+	
+Performing C SOURCE FILE Test BSYMBOLIC_WORKS succeeded with the following output:
+Change Dir: /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_f92a5/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f92a5.dir/build.make CMakeFiles/cmTC_f92a5.dir/build
+gmake[1]: Entering directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f92a5.dir/src.c.o
+/usr/bin/cc -DBSYMBOLIC_WORKS -D_GNU_SOURCE  -ffunction-sections -fdata-sections -Werror -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes  -fPIE -o CMakeFiles/cmTC_f92a5.dir/src.c.o -c /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_f92a5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f92a5.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -Werror -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes  -rdynamic CMakeFiles/cmTC_f92a5.dir/src.c.o -o cmTC_f92a5  -lm -Wl,-Bsymbolic-functions 
+gmake[1]: Leaving directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+	int main (void)
+	{
+	  return 0;
+	}
+	
+Performing C SOURCE FILE Test VERSION_SCRIPT_WORKS succeeded with the following output:
+Change Dir: /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_38799/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_38799.dir/build.make CMakeFiles/cmTC_38799.dir/build
+gmake[1]: Entering directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_38799.dir/src.c.o
+/usr/bin/cc -DVERSION_SCRIPT_WORKS -D_GNU_SOURCE  -ffunction-sections -fdata-sections -Werror -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes  -fPIE -o CMakeFiles/cmTC_38799.dir/src.c.o -c /home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_38799
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_38799.dir/link.txt --verbose=1
+/usr/bin/cc  -ffunction-sections -fdata-sections -Werror -Wall -Wcast-qual -Wno-error=deprecated-declarations -Wextra -Wwrite-strings -Wno-unused-parameter -Wstrict-prototypes  -rdynamic CMakeFiles/cmTC_38799.dir/src.c.o -o cmTC_38799  -lm -Wl,--version-script,/home/sykim/github/c-study/c-json-parse/json-c-build/check-version-script.sym 
+gmake[1]: Leaving directory '/home/sykim/github/c-study/c-json-parse/json-c-build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+	int main (void)
+	{
+	  return 0;
+	}
+	
