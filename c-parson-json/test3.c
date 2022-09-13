@@ -2,6 +2,7 @@
 #include "./parson/parson.h"    // parson.h 헤더 파일 포함
 #include <stdlib.h>
 #include <time.h>
+#define LENGTH 16
 
 struct Jparser 
 {
@@ -13,11 +14,12 @@ struct Jparser
 struct Jparser printRepeat(struct Jparser *jp1)
 {
 	srand((unsigned int)time(NULL));
-	int temp = jp1->repeat;
+	int temp = jp1->repeat * LENGTH;
+	printf("temp : %d\n", temp);
 	int rand_num, big_low, ascii;
 	char * copy = NULL;
 	copy = malloc(temp * sizeof(char) + 1 );
-	char *  charAscii = malloc(temp * sizeof(char));
+	char *  charAscii = malloc(temp * sizeof(char) + 1);
 
 	while(temp > 0) {
 		big_low = rand() % 2 + 1;
@@ -32,28 +34,24 @@ struct Jparser printRepeat(struct Jparser *jp1)
 		
 		sprintf(charAscii, "%c", ascii);
 		charAscii[-1] = '\0';
-		printf("charAscii :  %s\n", charAscii);
-		if(temp == jp1->repeat) strcpy(copy, charAscii); 
+		if(temp == (jp1->repeat * LENGTH)) strcpy(copy, charAscii); 
 		else strcat(copy, charAscii);
 
-		printf("copy : %s\n", copy);
 		temp--;	
 	}
 
+	printf("copy : %s\n", copy);
 	strcpy((*jp1).random_char, copy);
-	//(*jp1).random_char = copy;
 	free(copy);
-	printf("jp1 random_char : %s\n", (*jp1).random_char);
 	return *jp1;
 }
 
-
 void saveJson(struct Jparser jp1) 
 {
-	printf("save json repeat : %d\n", jp1.repeat);
-	printf("random_char : %s\n", jp1.random_char);
 
-	
+	printf("jp1 repeat : %d\n", jp1.repeat);
+	printf("jp1 random_char : %s\n", jp1.random_char);
+
 	JSON_Value *rootValue;
 	JSON_Object *rootObject;
 
@@ -65,35 +63,39 @@ void saveJson(struct Jparser jp1)
 	json_object_set_value(rootObject, "repeat", json_value_init_array());
 	JSON_Array *repeat = json_object_get_array(rootObject, "repeat");
 
-
-
-	//JSON_Value *branch = json_value_init_array();
-   // JSON_Array *leaves = json_value_get_array(branch);
-	JSON_Value *arrayValue = json_value_init_object();
-	JSON_Object *arrayObject = json_value_get_object(arrayValue);
-
 	char *copy;
-	//strcpy(copy, jp1.random_char);
 	copy = jp1.random_char;
-	char temp[2];
-	int i;
-	for(i = 0; i < jp1.repeat; i++ ) {
-		temp[0] = copy[i];
-		temp[1] = '\0'; 
-	 	printf("temp [i] : %s\n", temp);
-		json_array_append_string(repeat, temp);
+	char *temp = malloc(strlen(copy) + 1);
+	char *temp2 = malloc(LENGTH + 1);
 
-	json_object_set_value(repeat, "repeat", temp);
-		json_object_set_string(arrayObject, "temp", temp);
+	int i, j, index;
+	for(i = 1; i <= jp1.repeat; i++ ) {
+		index = i * LENGTH;
+		strcpy(temp, copy);
+		temp[index] = '\0';
+		temp2[LENGTH] = '\0';
+		strncpy(temp2, temp + ((i-1) * LENGTH), 16);
+//		temp[0] = copy[i];
+//		temp[1] = '\0'; 
+//	 	printf("temp [i] : %s\n", temp);
+		//json_array_append_string(repeat, temp);
+
+		JSON_Value *arrayValue = json_value_init_object();
+		JSON_Object *arrayObject = json_value_get_object(arrayValue);
+		json_object_set_string(arrayObject, "repeat_string", temp2);
+		json_array_append_value(repeat, arrayValue);
 	}
 	
 	json_serialize_to_file_pretty(rootValue, "repeat.json");
 	json_value_free(rootValue);
+    free(temp);
+    free(temp2);
+}
 
+void printFile(void)
+{
 	char* buffer;
-    int size;
-    int count;
-
+    int size, count;
     FILE *fp = fopen("repeat.json", "r");
     if (NULL == fp) {
         return -1;
@@ -113,7 +115,6 @@ void saveJson(struct Jparser jp1)
     fclose(fp);        // 파일 포인터 닫기
     free(buffer);    // 동적 메모리 해제
 }
-
 
 int main()
 {
@@ -137,10 +138,11 @@ int main()
     // 객체에서 키에 해당하는 숫자를 가져옴
 	repeat = (int)json_object_get_number(rootObject, "repeat");
 	jp1->repeat = repeat; 
-	jp1->random_char = malloc(sizeof(char) * repeat + 1);
+	jp1->random_char = malloc(sizeof(char) * repeat * LENGTH + 1);
 	printf("struct repeat : %d\n", jp1->repeat);
 
     saveJson(printRepeat(jp1));
+	printFile();
 	
 	printf("thread_num : %d\n", (int)json_object_get_number(rootObject, "thread_num"));
     
@@ -151,9 +153,8 @@ int main()
     JSON_Array *array = json_object_get_array(rootObject, "thread");
     for (int i = 0; i < json_array_get_count(array); i++)     // 배열의 요소 개수만큼 반복
     {
-    
-			// 배열에 인덱스를 지정하여 문자열을 가져옴
-        printf("  %s\n", json_array_get_string(array, i));
+		// 배열에 인덱스를 지정하여 문자열을 가져옴
+      //  printf("%s\n", json_array_get_string(array, i));
     }
 	
 	free(jp1);

@@ -1,9 +1,17 @@
 {
     "repeat_cnt": 4,
     "repeat": [
-        "v",
-        "w",
-        "k",
-        "i"
+        {
+            "repeat_string": "kLdN"
+        },
+        {
+            "repeat_string": "tYRe"
+        },
+        {
+            "repeat_string": "RYwH"
+        },
+        {
+            "repeat_string": "gvTK"
+        }
     ]
 }
