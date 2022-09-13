@@ -1,0 +1,36 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+__B64_ENCODING_H__	b64_encoding.h	2;"	d
+address	string_struct.c	/^	char *address;$/;"	m	struct:employee	file:
+age	string_struct.c	/^	int age;$/;"	m	struct:employee	file:
+base64_table	b64_encoding.c	/^static const unsigned char base64_table[65] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+\/";$/;"	v	file:
+base64_table	memcpy_base64.c	/^static const unsigned char base64_table[65] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+\/";$/;"	v	file:
+base64_table	string_master_base64.c	/^static const unsigned char base64_table[65] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+\/";$/;"	v	file:
+base64_table	string_memcpy_base64.c	/^static const unsigned char base64_table[65] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+\/";$/;"	v	file:
+department	string_struct.c	/^	char *department;$/;"	m	struct:employee	file:
+employee	string_struct.c	/^struct employee$/;"	s	file:
+html_pointer	memcpy_base64.c	/^int html_pointer(char * base64) {$/;"	f
+html_pointer	string_master_base64.c	/^int html_pointer(char * base64) {$/;"	f
+html_pointer	string_memcpy_base64.c	/^int html_pointer(char * base64) {$/;"	f
+id	string_struct.c	/^	char *id;$/;"	m	struct:employee	file:
+list	string_struct.c	/^void list(struct employee *e, int num) {$/;"	f
+main	atoi_atof_training.c	/^int main(void) {$/;"	f
+main	memcpy_base64.c	/^int main() {$/;"	f
+main	snprintf_sprintf_test.c	/^int main() {$/;"	f
+main	string_master_base64.c	/^int main() {$/;"	f
+main	string_memcpy_base64.c	/^int main() {$/;"	f
+main	string_memcpy_test.c	/^int main(void) {$/;"	f
+main	string_struct.c	/^int main() {$/;"	f
+name	string_struct.c	/^	char *name;$/;"	m	struct:employee	file:
+png_insert	memcpy_base64.c	/^char* png_insert(char* buffer) {$/;"	f
+png_insert	string_master_base64.c	/^char* png_insert(char* buffer) {$/;"	f
+png_insert	string_memcpy_base64.c	/^char* png_insert(char* buffer) {$/;"	f
+registerEmployee	string_struct.c	/^struct employee registerEmployee(struct employee *e, int num) {$/;"	f
+sd_string_alloc_base64_encode	b64_encoding.c	/^char * sd_string_alloc_base64_encode(const unsigned char *src, size_t len, size_t *out_len)$/;"	f
+sd_string_alloc_base64_encode	memcpy_base64.c	/^char * sd_string_alloc_base64_encode(const unsigned char *src, size_t len, size_t *out_len)$/;"	f
+sd_string_alloc_base64_encode	string_master_base64.c	/^char * sd_string_alloc_base64_encode(const unsigned char *src, size_t len, size_t *out_len)$/;"	f
+sd_string_alloc_base64_encode	string_memcpy_base64.c	/^char * sd_string_alloc_base64_encode(const unsigned char *src, size_t len, size_t *out_len)$/;"	f

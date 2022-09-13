@@ -1,0 +1,47 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BYTES_TO_KB	14_메모리 관리 함수 만들기.c	4;"	d	file:
+BYTES_TO_KB	메모리측정.c	5;"	d	file:
+SUBJECT	13_학생부 성적 관리 프로그램.c	3;"	d	file:
+Student	13_학생부 성적 관리 프로그램.c	/^struct Student {$/;"	s	file:
+allocate	14_메모리 관리 함수 만들기.c	/^int allocate(void) {$/;"	f
+average	13_학생부 성적 관리 프로그램.c	/^void average(int i, struct Student *s) {$/;"	f
+averageAll	13_학생부 성적 관리 프로그램.c	/^void averageAll(int num, struct Student *s) {$/;"	f
+check	09_에러_시계방향 증가하는 N차 행렬 출력하기.c	/^int check(int count, int size) {$/;"	f
+clear	14_메모리 관리 함수 만들기.c	/^void clear(int sizeAlct) {$/;"	f
+divide	08_계산기 프로그램.c	/^int divide(int a, int b) {$/;"	f
+eng	13_학생부 성적 관리 프로그램.c	/^	int eng;$/;"	m	struct:Student	file:
+info	13_학생부 성적 관리 프로그램.c	/^void info(int i, struct Student *s) {$/;"	f
+kor	13_학생부 성적 관리 프로그램.c	/^	int kor;$/;"	m	struct:Student	file:
+list	13_학생부 성적 관리 프로그램.c	/^int list(struct Student *s) {$/;"	f
+main	01_다양한 출력 함수 사용해보고 차이점 알아보기.c	/^int main(void) {$/;"	f
+main	02_변수에 다양한 숫자 문자 상수를 넣고 출력하기.c	/^int main(void) {$/;"	f
+main	03_다양한 자료형 출력 해보기.c	/^int main(void) {$/;"	f
+main	04_다양한 연산자를 사용해보고 차이점을 이해하자.c	/^int main(void) {$/;"	f
+main	06_다이아몬드 출력하기.c	/^int main(void) {$/;"	f
+main	07_숫자를 입력받아 구구단을 숫자만큼 연속으로 출력.c	/^int main(void) {$/;"	f
+main	08_계산기 프로그램.c	/^int main(void) {$/;"	f
+main	09_시계방향으로 증가하는 N차 행렬.c	/^int main() {$/;"	f
+main	09_에러_시계방향 증가하는 N차 행렬 출력하기.c	/^int main(void) {$/;"	f
+main	09_주사위 확률 구하기 프로그램.c	/^int main(void) {$/;"	f
+main	10_포인터로 배열 값 관리하기.c	/^int main(void) {$/;"	f
+main	11_입력 받은 문자열 분석하기.c	/^int main(void) {$/;"	f
+main	12_파일 입출력.c	/^int main() {$/;"	f
+main	13_학생부 성적 관리 프로그램.c	/^int main() {$/;"	f
+main	14_메모리 관리 함수 만들기.c	/^int main(void) {$/;"	f
+main	메모리측정.c	/^int main(void) {$/;"	f
+main	포인터와 구조체 예시.c	/^int main(void) {$/;"	f
+mat	13_학생부 성적 관리 프로그램.c	/^	int mat;$/;"	m	struct:Student	file:
+minus	08_계산기 프로그램.c	/^int minus(int a, int b) {$/;"	f
+multiply	08_계산기 프로그램.c	/^int multiply(int a, int b) {$/;"	f
+name	13_학생부 성적 관리 프로그램.c	/^	char name[20];$/;"	m	struct:Student	file:
+num	13_학생부 성적 관리 프로그램.c	/^	int num;$/;"	m	struct:Student	file:
+plus	08_계산기 프로그램.c	/^int plus(int a, int b) {$/;"	f
+registerStudent	13_학생부 성적 관리 프로그램.c	/^struct Student registerStudent(struct Student *s, int num) {$/;"	f
+sci	13_학생부 성적 관리 프로그램.c	/^	int sci;$/;"	m	struct:Student	file:
+strcasestr	12_파일 입출력.c	/^char *strcasestr(const char *haystack, const char *needle) {$/;"	f
+top	13_학생부 성적 관리 프로그램.c	/^void top(int num, struct Student *s, int sub) { \/\/ 0 1 2 3 4(전체) $/;"	f
