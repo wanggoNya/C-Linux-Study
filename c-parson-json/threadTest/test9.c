@@ -3,7 +3,9 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
-#define LENGTH 4
+#define LENGTH 10
+#include <pthread.h>
+#include <unistd.h>
 
 char copy[LENGTH + 1];
 
@@ -30,8 +32,6 @@ static char * printRepeat(void)
 		big_low = rand() % 2 + 1;
 		rand_num = rand();
 			
-		printf("rand_num : %d\n", rand_num); 
-
 		if (big_low == 1) {
 			ascii = rand_num % 26 + 65; // 1~ 90 대문자 
 		}
@@ -71,7 +71,6 @@ static void saveJson(struct Jparser jp1)
 		string[0] = '\0';
 		string = printRepeat(); 
 		
-		printf("string : %s\n", string);
 		JSON_Value *arrayValue = json_value_init_object();
 		JSON_Object *arrayObject = json_value_get_object(arrayValue);
 		json_object_set_string(arrayObject, "repeat_string", string);
@@ -108,13 +107,31 @@ static int printFile(void)
 	return 0;
 }
 
+static void* thread_routine(void * arg, char * threadName){
+        pthread_t tid;
+        tid=pthread_self();
+        printf("\ttid:%lx\n",tid);
+        int i=0;
+        while(i < 5){
+                printf("\t%s running time : %ds\n",threadName,i);
+                i++;
+                sleep(1);
+        }
+
+	return NULL;
+}
+
+
+
 int main(void)
 {
 	struct Jparser *jp1 = malloc(sizeof(struct Jparser));
 
     JSON_Value *rootValue;
     JSON_Object *rootObject;
-	
+	JSON_Object *threadOb;
+	JSON_Array *array;
+
 	// 초기화 
 	int repeat = 0; 
    	jp1->repeat = 0;
@@ -122,9 +139,9 @@ int main(void)
 	jp1->random_char = NULL;
 
 	/* 초기화 */
-    rootValue = json_parse_file("jparser.json");      // JSON 파일을 읽어서 파싱
+    rootValue = json_parse_file("jparser.json");      
   
-	rootObject = json_value_get_object(rootValue);    // JSON_Value에서 JSON_Object를 얻음
+	rootObject = json_value_get_object(rootValue);   
     
     /* 사용 */
     // 객체에서 키에 해당하는 숫자를 가져옴
@@ -135,6 +152,48 @@ int main(void)
     saveJson(*jp1);
 	printFile();
 	
+	jp1->thread = (int)json_object_get_number(rootObject, "thread_num");
+	printf("thread_num : %d\n", jp1->thread);
+
+    array = json_object_get_array(rootObject, "thread"); // 객체에서 키에 해당하는 배열을 가져옴
+	int arrayCount = (int)json_array_get_count(array);
+	
+	char* threadName;
+    pthread_t thread2[3];
+	pthread_t thread;
+	pthread_attr_t attr;
+	pthread_attr_setdetachstate(&attr, PTHREAD_CREATE_DETACHED);
+	int pid;
+    for (int i = 0 ; i < arrayCount ; i++)
+    {
+        // 배열에 인덱스를 지정하여 문자열을 가져옴
+		threadOb = json_array_get_object(array, i);
+		threadName = json_object_get_string(threadOb, "name");
+		printf("threadOb : %s\n", threadName);
+	
+		pthread_attr_t attr;
+		pthread_attr_setdetachstate(&attr, PTHREAD_CREATE_JOINABLE);
+ 		//pid = pthread_create(&thread,NULL,thread_routine(NULL, threadName), (void *)threadName);
+ 		pid = pthread_create(&(thread2[i]),NULL,thread_routine(NULL, threadName), (void *)threadName);
+		
+        if (pid < 0)
+  		{
+    	    perror("thread create error : ");
+     		exit(0);
+  		}
+	}
+	int status;
+	pthread_join(thread, (void **)&status);
+
+//	int i=0;
+  	 // printf("tid:%lx\n",pthread_self());
+	/* while(1){
+        printf("main_thread running time : %ds\n",i);
+        i++;
+        sleep(1);
+    }*/
+    //pthread_join(thread,NULL); // join하려는 thread를 명시해주고, start_routine이 반환하는 값을 null에 저장
+
 
 	if (jp1) {
 		if (jp1->random_char) {
@@ -144,9 +203,9 @@ int main(void)
 		free(jp1);
 		jp1 = NULL;
 	}
-    // 객체에서 키에 해당하는 불 값을 가져옴
-    /* 해제 */
-    json_value_free(rootValue);    // JSON_Value에 할당된 동적 메모리 해제
+    
+	/* 해제 */
+    json_value_free(rootValue);
 
     return 0;
 }
