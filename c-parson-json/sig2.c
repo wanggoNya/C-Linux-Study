@@ -69,7 +69,7 @@ static void saveRepeatJson(struct Jparser jp1)
 
 		char * string;
 		int i;
-		
+
 		srand((unsigned int)time(NULL));
 		for(i = 1; i <= jp1.repeat; i++ ) {
 
@@ -96,7 +96,7 @@ static void saveSigJson(struct Jparser jp1)
 
 
 		JSON_Object *reload = json_object_get_object(sigObject, "reload");
-	
+
 		json_object_remove(reload, "repeat");
 		json_object_set_number(reload, "repeat", jp1.repeat);
 
@@ -110,44 +110,44 @@ static void  printFile(int sig)
 		printf("json 출력 파일 생성 중... \n");
 		saveRepeatJson(*jp2);
 		char* buffer;
-/*		int size;
-		FILE *fp = fopen("repeat.json", "r");
-		if (NULL == fp) {
+		/*		int size;
+				FILE *fp = fopen("repeat.json", "r");
+				if (NULL == fp) {
 				printf("sig : %d\n", sig);
 				exit(0);
-		}
+				}
 
 				printf("sig : %d\n", sig);
-		fseek(fp, 0, SEEK_END);
-		size = ftell(fp);
+				fseek(fp, 0, SEEK_END);
+				size = ftell(fp);
 
-		buffer = malloc(size * sizeof(char) + 1);
-		memset(buffer, 0, size + 1);
+				buffer = malloc(size * sizeof(char) + 1);
+				memset(buffer, 0, size + 1);
 
-		fseek(fp, 0, SEEK_SET);  
-		fread(buffer, size, 1, fp);
+				fseek(fp, 0, SEEK_SET);  
+				fread(buffer, size, 1, fp);
 
-		printf("\n%s\n\n", buffer);
+				printf("\n%s\n\n", buffer);
 
-		fclose(fp); */
+				fclose(fp); */
 
 
 		JSON_Value * repeatValue = json_parse_file("repeat.json");
 		size_t repeatSize = json_serialization_size_pretty(repeatValue);
 		buffer = malloc(repeatSize);
 		json_serialize_to_buffer_pretty(repeatValue, buffer, repeatSize);
-		
+
 		printf("\n%s\n", buffer);
-	
+
 		if (buffer) 
 		{
 				free(buffer);
 				buffer = NULL;
 		}
-	if (sig == 2) {
-		sleep(3);
-		exit(0);
-	}
+		if (sig == 2) {
+				sleep(3);
+				exit(0);
+		}
 }
 
 static void  jsonFile(int sig)
@@ -177,7 +177,7 @@ static void  jsonFile(int sig)
 		jp1->repeat = repeat; 
 		jp1->random_char = malloc(sizeof(char) * repeat * LENGTH + 1);
 
-	//	saveRepeatJson(*jp1);
+		//	saveRepeatJson(*jp1);
 		printFile(10);
 		saveSigJson(*jp1);
 
