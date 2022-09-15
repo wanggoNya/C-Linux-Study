@@ -84,7 +84,6 @@ static void saveRepeatJson(struct Jparser jp1)
 		}
 
 		json_serialize_to_file_pretty(rootValue, "repeat.json");
-		//json_value_free(rootValue);
 }
 
 static void saveSigJson(struct Jparser jp1)
@@ -110,27 +109,6 @@ static void  printFile(int sig)
 		printf("json 출력 파일 생성 중... \n");
 		saveRepeatJson(*jp2);
 		char* buffer;
-		/*		int size;
-				FILE *fp = fopen("repeat.json", "r");
-				if (NULL == fp) {
-				printf("sig : %d\n", sig);
-				exit(0);
-				}
-
-				printf("sig : %d\n", sig);
-				fseek(fp, 0, SEEK_END);
-				size = ftell(fp);
-
-				buffer = malloc(size * sizeof(char) + 1);
-				memset(buffer, 0, size + 1);
-
-				fseek(fp, 0, SEEK_SET);  
-				fread(buffer, size, 1, fp);
-
-				printf("\n%s\n\n", buffer);
-
-				fclose(fp); */
-
 
 		JSON_Value * repeatValue = json_parse_file("repeat.json");
 		size_t repeatSize = json_serialization_size_pretty(repeatValue);
@@ -297,8 +275,8 @@ int main(void)
 				jp2 = NULL;
 		}
 
-		if (thread2) {free(thread2); thread2 = NULL; }
-		if (rootValue) {json_value_free(rootValue); rootValue = NULL; }
+		if (thread2) { free(thread2); thread2 = NULL; }
+		if (rootValue) { json_value_free(rootValue); rootValue = NULL; }
 
 		return 0;
 }
