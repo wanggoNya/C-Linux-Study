@@ -107,7 +107,7 @@ static void saveSigJson(struct Jparser jp1)
 static void  printFile(int sig)
 {
 		printf("json 출력 파일 생성 중... \n");
-		saveRepeatJson(*jp2);
+	//	saveRepeatJson(*jp2);
 		char* buffer;
 
 		JSON_Value * repeatValue = json_parse_file("repeat.json");
@@ -155,9 +155,18 @@ static void  jsonFile(int sig)
 		jp1->repeat = repeat; 
 		jp1->random_char = malloc(sizeof(char) * repeat * LENGTH + 1);
 
-		//	saveRepeatJson(*jp1);
-		printFile(10);
-		saveSigJson(*jp1);
+		saveRepeatJson(*jp1);
+		
+		int signal;
+		if(sig == 2) signal = 2;
+		else 
+		{
+				signal = 10;
+				saveSigJson(*jp1);
+		}
+		printf("signal : %d\n", signal);
+		printf("repeat : %d\n", repeat);
+		printFile(signal);
 
 		if (jp1) {
 				if (jp1->random_char) {
@@ -209,7 +218,8 @@ int main(void)
 		memcpy(jp2, jp1, sizeof(struct Jparser));
 
 		signal(SIGUSR1, jsonFile);
-		signal(SIGINT, printFile);
+	//	signal(SIGINT, printFile);
+		signal(SIGINT, jsonFile);
 
 		rootValue = json_parse_file("jparser.json");      
 		rootObject = json_value_get_object(rootValue);   
