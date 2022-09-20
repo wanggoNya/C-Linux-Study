@@ -21,6 +21,7 @@ struct Jparser
 		char *random_char;
 };
 
+struct Jparser *jp2;
 
 static char * randRepeat(void)
 {
@@ -105,9 +106,8 @@ static void saveSigJson(struct Jparser jp1)
 
 static void  printFile(int sig)
 {
-		printf("\n\n\n===========================\n");
 		printf("json 출력 파일 생성 중... \n");
-		printf("===========================\n\n\n");
+	//	saveRepeatJson(*jp2);
 		char* buffer;
 
 		JSON_Value * repeatValue = json_parse_file("repeat.json");
@@ -155,18 +155,18 @@ static void  jsonFile(int sig)
 		jp1->repeat = repeat; 
 		jp1->random_char = malloc(sizeof(char) * repeat * LENGTH + 1);
 
+		saveRepeatJson(*jp1);
 		
 		int signal;
-		if(sig == 2) {
-				signal = 2;
-				saveRepeatJson(*jp1);
-				printFile(signal);
-		}
+		if(sig == 2) signal = 2;
 		else 
 		{
 				signal = 10;
 				saveSigJson(*jp1);
 		}
+		printf("signal : %d\n", signal);
+		printf("repeat : %d\n", repeat);
+		printFile(signal);
 
 		if (jp1) {
 				if (jp1->random_char) {
@@ -179,6 +179,9 @@ static void  jsonFile(int sig)
 } 
 
 static void* thread_routine(void * arg){
+		//  pthread_t tid;
+		//   tid=pthread_self();
+		// printf("\ttid:%lx\n",tid);
 		char* threadName = (char*)arg;
 		int i=0;
 		while(1){
@@ -192,18 +195,30 @@ static void* thread_routine(void * arg){
 int main(void)
 {
 		struct Jparser *jp1 = malloc(sizeof(struct Jparser));
+		// 초기화 
+		int repeat = 0; 
+		jp1->repeat = 0;
 		jp1->thread = 0;
+		jp1->random_char = NULL;
 
 		JSON_Object *threadOb;
 		JSON_Array *array;
 
+		/* 초기화 */
 		rootValue = json_parse_file("jparser.json");      
 		rootObject = json_value_get_object(rootValue);   
 
 		/* 사용 */
 		// 객체에서 키에 해당하는 숫자를 가져옴
+		repeat = (int)json_object_get_number(rootObject, "repeat");
+		jp1->repeat = repeat; 
+		jp1->random_char = malloc(sizeof(char) * repeat * LENGTH + 1);
+
+		jp2 = malloc(sizeof(struct Jparser));
+		memcpy(jp2, jp1, sizeof(struct Jparser));
 
 		signal(SIGUSR1, jsonFile);
+	//	signal(SIGINT, printFile);
 		signal(SIGINT, jsonFile);
 
 		rootValue = json_parse_file("jparser.json");      
@@ -253,8 +268,21 @@ int main(void)
 		// join하려는 thread를 명시해주고, start_routine이 반환하는 값을 null에 저장
 
 		if (jp1) {
+				if (jp1->random_char) {
+						free(jp1->random_char);
+						jp1->random_char = NULL;
+				}
 				free(jp1);
 				jp1 = NULL;
+		}
+
+		if (jp2) {
+				if (jp2->random_char) {
+						free(jp2->random_char);
+						jp2->random_char = NULL;
+				}
+				free(jp2);
+				jp2 = NULL;
 		}
 
 		if (thread2) { free(thread2); thread2 = NULL; }
