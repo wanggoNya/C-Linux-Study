@@ -1,6 +1,6 @@
 CC = gcc
 TARGET = main.out
-OBJS = queue1.o 
+OBJS = queue5.o 
 CFLAGS = -g -c -Wall -Werror -Wextra  -Winline -Wsign-compare -Wunused-parameter -Wpointer-arith -Wshadow -Wstrict-prototypes -Wmissing-prototypes
 all : main.out
 LDFLAGS = -pthread

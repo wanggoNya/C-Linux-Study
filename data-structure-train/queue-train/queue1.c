@@ -3,8 +3,8 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <string.h>
-#define LENGTH 100
-#define MAXSIZE 10
+#define length 100
+#define maxsize 10
 
 typedef struct {
 		char data[MAXSIZE][LENGTH];
