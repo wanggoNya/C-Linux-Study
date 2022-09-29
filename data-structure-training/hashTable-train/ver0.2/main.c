@@ -30,7 +30,7 @@ int main(void)
 				hash_index = hashKeyToIndex(hash_key);	
 
 				hash_table = hash_table_arr + hash_index;
-				hash_table = hashTableIndex(hash_table_arr + hash_index, linked_list);
+				hash_table = hashTableIndex(hash_table, linked_list);
 
 				if(!nullCheck(hash_table, "hash_table")) return 0;
 
