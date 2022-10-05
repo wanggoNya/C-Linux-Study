@@ -1,102 +1,110 @@
 #include "hashTable.h"
+__thread hash_table_t hash_table_arr[TBLSIZE];
 
+int pidCheck(int pid)
+{
+		if (pid < 0)
+		{
+				perror("thread create error : \n");
+				exit(0);
+		}
+		return 1;
+}
 
-void * jsonReadAlloc(void * thread_json)
+int jsonReadThreadNum(void)
+{
+		JSON_Value *rootValue;
+		JSON_Object *rootObject;
+		JSON_Array *threadArray;
+
+		rootValue = json_parse_file("jparser.json");
+		rootObject = json_value_get_object(rootValue);
+
+		int threadNum, threadArrayCount;
+
+		threadNum = (int)json_object_get_number(rootObject, "thread_num");
+		threadArray = json_object_get_array(rootObject, "thread");
+		threadArrayCount = (int)json_array_get_count(threadArray);
+
+		if(threadNum != threadArrayCount) return 0;
+
+		json_value_free(rootValue);
+
+		return threadNum;
+}
+
+void * jsonReadAlloc(void * json_struct)
 {		
-		thread_json_t * tj1 = (thread_json_t *)thread_json;	
-		tj1->thread_num = 0;
-		tj1->thread_name = '\0';
+		json_struct_t * tj1 = (json_struct_t *)json_struct;	
+
+		tj1->thread_flag = 1;
+
+		strcpy(tj1->thread_status, "RUNNING\0"); 
 
 		JSON_Value *rootValue;
 		JSON_Object *rootObject;
 		JSON_Object *threadObject;
 		JSON_Array *threadArray;
 
-		int threadArrayCount, i;
-		int threadNameLen, hashFileNameLen;
-
 		rootValue = json_parse_file("jparser.json");
 		rootObject = json_value_get_object(rootValue);
 
 		threadArray = json_object_get_array(rootObject, "thread");
-		threadArrayCount = (int)json_array_get_count(threadArray);
 
-		tj1->thread_num = (int)json_object_get_number(rootObject, "thread_num");
-		tj1->thread_option = malloc(sizeof(int) * tj1->thread_num);
-	
-		if(tj1->thread_num != threadArrayCount) exit(0);
+		int threadNum, i, threadNameLen, hashFileNameLen;
 
-		tj1->thread_name = calloc(tj1->thread_num, sizeof(char *));
-		tj1->hash_file = calloc(tj1->thread_num, sizeof(char *));
+		threadNum = (int)json_object_get_number(rootObject, "thread_num");
 
-		for (i = 0 ; i < tj1->thread_num ; i++)
+		for (i = 0 ; i < threadNum ; i++)
 		{
-				threadObject = json_array_get_object(threadArray, i);
-				threadNameLen = strlen(json_object_get_string(threadObject, "name"));
-				hashFileNameLen = strlen(json_object_get_string(threadObject, "hash_file"));
-				
-				tj1->thread_option[i] = (int)(json_object_get_number(threadObject, "thread_option"));
-
-				tj1->thread_name[i] = calloc(threadNameLen, sizeof(char));
-				tj1->hash_file[i] = calloc(hashFileNameLen, sizeof(char));
-
-				strncpy(tj1->thread_name[i], json_object_get_string(threadObject, "name"), threadNameLen+1);
-				printf("threadName : %s\n", tj1->thread_name[i]);
-
-		}
-
-		json_value_free(rootValue);
-		return tj1;
-}
-
-void threadMake(thread_json_t * tj1, pthread_t * thread)
-{
-		//pthread_t * thread = (pthread_t *)malloc(tj1->thread_num * sizeof(pthread_t));
-
-		int pid, i, status;
-
-		for (i = 0 ; i < tj1->thread_num ; i++)
-		{
-				pid = pthread_create(&(thread[i]), NULL, thread_routine, (void *)(*(tj1->thread_name + i)));
-
-				if (pid < 0)
+				if (i == tj1->thread_num)
 				{
-						perror("thread create error : ");
-						exit(0);
+						threadObject = json_array_get_object(threadArray, i);
+
+						threadNameLen = strlen(json_object_get_string(threadObject, "name"));
+						hashFileNameLen = strlen(json_object_get_string(threadObject, "hash_file"));
+
+						tj1->thread_name = calloc(threadNameLen, sizeof(char));
+						tj1->hash_file = calloc(hashFileNameLen, sizeof(char));
+
+						strncpy(tj1->thread_name, json_object_get_string(threadObject, "name"), threadNameLen + 1);
+						tj1->thread_option = (int)(json_object_get_number(threadObject, "thread_option"));
+						strncpy(tj1->hash_file, json_object_get_string(threadObject, "hash_file"), hashFileNameLen + 1);
 				}
 		}
 
-		for (i = 0 ; i < tj1->thread_num ; i++)
-		{
-		  		pthread_join(thread[i], (void **)&status);
-		}
-		
-		//free(thread);
+		json_value_free(rootValue);
 
+		thread_routine(tj1);
+
+		return NULL;
 }
 
-void* thread_routine(void * arg)
+void * thread_routine(void * arg)
 {
-         char* threadName = (char*)arg;
-         int i=0;
-		 int num = (int)threadName[strlen(threadName)-1]-8;
-				pthread_t id;
-				id = pthread_self();
-				printf("Thread id : %ud\n", (int)id);
-  //       while(1){
-                 printf(" \033[%dm\t%s\033[0m running \033[31mtime : \033[0m%ds\n", num, threadName, i);
-                 i+=3;
-                 sleep(3);
-   //      }
+		json_struct_t * tj1 = (json_struct_t *)arg;	
 
-		whileFileRead();
-     return NULL;
- }
+		int i = 1;
+		int num = (int)tj1->thread_name[strlen(tj1->thread_name)-1]-8;
 
-__thread hash_table_t hash_table_arr[TBLSIZE];
+		while(i <= tj1->thread_option){
+				strcpy(tj1->thread_status, "SLEEPING\0"); 
+				if(0) printf(" \033[%dm\t%s\033[0m running \033[31mtime : \033[0m%ds\n", num, tj1->thread_name, i);
+				i+=1;
+				sleep(1);
+		}
 
-int whileFileRead(void)
+		strcpy(tj1->thread_status, "RUNNING\0"); 
+		sleep(1);
+		whileFileRead(tj1);
+
+		return NULL;
+}
+
+int whileFileRead(void * arg)
 {
+		json_struct_t * tj1 = (json_struct_t *)arg;	
+
 		FILE *fp;
 		char hash_buf[1024];
 		char **hash;
@@ -105,9 +113,12 @@ int whileFileRead(void)
 		linked_list_t *linked_list;	
 		hash_table_t * hash_table;
 
-		fp = fileOpen();
-		if(!fp) return 0;	
+		fp = fileOpen(tj1);
+
+		strcpy(tj1->thread_status, "INIT\0"); 	
 		hashTableArrClear(hash_table_arr + 0);
+		strcpy(tj1->thread_status, "RUNNING\0"); 
+		sleep(1);
 
 		while (!feof(fp))
 		{
@@ -120,7 +131,7 @@ int whileFileRead(void)
 				if(!nullCheck(hash, "hash")) break;
 
 				linked_list = linkedListAlloc(linked_list, hash);
-				
+
 				hash_key = hashKeyToAscii(hash[0]);
 				hash_index = hashKeyToIndex(hash_key);	
 
@@ -132,23 +143,32 @@ int whileFileRead(void)
 				freeFunc(hash);
 		}
 
+		strcpy(tj1->thread_status, "DONE\0"); 
+		sleep(1);
+		strcpy(tj1->thread_status, "REST\0"); 
+		sleep(1);
+		fclose(fp);
+		
+		while (tj1->thread_flag) { };
+		
+		printf("%s  ", tj1->thread_name);
 		printHashTable(hash_table_arr);
 
-		freeHash(hash_table_arr);		
-		fclose(fp);
 		return 0;
 }
 
-FILE * fileOpen(void)
+FILE * fileOpen(void * arg)
 {
+		json_struct_t * tj1 = (json_struct_t *)arg;	
+
 		FILE *fp;
 
-		fp = fopen("hash.csv", "r");
+		fp = fopen(tj1->hash_file, "r");
 
 		if (!fp)
 		{
 				printf("ERROR : file open\n");
-				return 0;			
+				exit(0);			
 		}
 
 		return fp;
@@ -272,10 +292,10 @@ void printHashTable(hash_table_t * hash_table)
 		int i, j;
 		linked_list_t * linked_list;
 		char mark = '*';
-		printf("\n\n\033[01m\033[4mHashTable\033[0m\n");
+		printf("\033[01m\033[4mHashTable\033[0m\n");
 		for(i = 0 ; i < TBLSIZE ; i++)
 		{
-				
+
 				if (!(hash_table + i)->head) mark = '#';
 				else mark = '*';
 
@@ -322,6 +342,8 @@ void printHashTable(hash_table_t * hash_table)
 
 				printf("\n");
 		}
+
+		freeHash(hash_table_arr);		
 }
 
 void freeFunc(char **addr)
@@ -382,19 +404,18 @@ void freeList(linked_list_t * addr)
 		}
 }
 
-void freeThreadJson(thread_json_t * addr)
+void freeThreadJson(json_struct_t * addr, int threadNum)
 {
 		int i;
-		for (i = 0 ; i < addr->thread_num ; i++)
+		for (i = 0 ; i < threadNum ; i++)
 		{
-				freeAll(addr->thread_name[i]);
-
+				freeAll((addr[i]).thread_name);
+				freeAll((addr[i]).hash_file);
 		}
-		freeAll(addr->thread_name);
 		freeAll(addr);
 }
 
-void freeAll(void *addr)
+void freeAll(void * addr)
 {
 		if (addr) {
 				free(addr);
